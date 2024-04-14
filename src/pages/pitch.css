@@ -1,0 +1,183 @@
+/* styles.css */
+
+/* Global styles */
+body {
+    font-family: 'Source Sans Pro', sans-serif; /* Using Source Sans Pro font */
+    line-height: 1.6; /* Increase line height for better readability */
+  }
+  
+  /* Style for the deal terms section */
+  .deal-terms {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease; /* Add transition for hover effect */
+  }
+  
+  
+  .bonus-perks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .perk-item {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+  }
+  
+  .perk-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .perk-item ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .perk-item ul li {
+    margin-bottom: 5px;
+  }
+  
+  .perk-item.sold-out {
+    opacity: 0.5;
+  }
+  
+  .perk-item:hover {
+    color: #007bff; /* Change text color on hover */
+  }
+  /* styles.css */
+
+/* styles.css */
+
+/* Style for the info button */
+.info-button {
+    margin-left: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #007bff; /* Primary color for button */
+  }
+  
+  .info-button:hover {
+    color: #0056b3; /* Darker shade of primary color on hover */
+  }
+  
+  .info-text {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #555; /* Medium-dark text color */
+    display: none; /* Hide info text by default */
+  }
+  
+  .deal-term:hover .info-text {
+    display: block; /* Show info text on hover */
+  }
+
+  
+  .highlight-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333; /* Dark text color */
+  }
+
+  .product-line {
+    border-bottom: 2px solid #ccc; /* Add a line below Product */
+    margin-bottom: 20px; /* Add space below the line */
+    width: 7%;
+  }
+  
+  .product-heading {
+    font-size: 24px; /* Large heading size */
+    margin-bottom: 20px; /* Add space below the heading */
+    color:#555;
+  }
+  
+  .medium-text {
+    font-size: 18px; /* Medium text size */
+    margin-bottom: 15px; /* Add space below each paragraph */
+  }
+  
+  .technology-details {
+    margin-top: 30px; /* Add space above the technology details */
+  }
+  
+  .technology-heading {
+    text-align: center; /* Center-align the heading */
+    font-size: 24px; /* Large heading size */
+    margin-bottom: 20px; /* Add space below the heading */
+  }
+  
+  .technology-subheading {
+    font-size: 20px; /* Medium-large subheading size */
+    margin-bottom: 10px; /* Add space below the subheading */
+  }
+  
+  .technology-details p {
+    font-size: 18px; /* Medium text size */
+    margin-bottom: 15px; /* Add space below each paragraph */
+  }
+  
+  .technology-details blockquote {
+    font-size: 18px; /* Medium text size */
+    margin-top: 20px; /* Add space above the quote */
+  }
+
+
+  .accolades-awards {
+    margin-top: 30px; /* Add space above the accolades section */
+  }
+  
+  .accolades-heading {
+    text-align: center; /* Center-align the heading */
+    font-size: 24px; /* Large heading size */
+    margin-bottom: 20px; /* Add space below the heading */
+  }
+  
+  .accolades-awards p {
+    font-size: 18px; /* Medium text size */
+    margin-bottom: 15px; /* Add space below the paragraph */
+  }
+  
+  .accolades-awards blockquote {
+    font-size: 18px; /* Medium text size */
+    margin-top: 20px; /* Add space above the quote */
+  }
+  
+  .mag{
+    display: flex;
+    text-align: center;
+    width: 200px;
+    height: 270px;
+    animation: data 5s linear;
+    animation-iteration-count: infinite;
+  }
+  @keyframes data {
+    0%{transform: rotate(0deg);}
+    50%{transform: rotate(10deg);}
+    100%{transform: rotate(-10deg);}
+}
+  
+.centered-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Optional: set height to fill the viewport */
+  }
+  
+  #visionimage {
+    max-width: 70%; /* Ensure the image doesn't exceed its container */
+  }
+
+  .vision-container{
+    text-align: center;
+  }
+
+  .aboutp{
+    background: white;
+  }

@@ -1,0 +1,52 @@
+.container {
+    max-width: 100%;
+    padding: 20px;
+  }
+  
+  .heading {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333; /* Heading color */
+    transition: font-family 0.3s ease; /* Add transition for font change on hover */
+    font-family: 'Arial', sans-serif; /* Default font */
+  }
+  
+  .heading:hover {
+    font-family: 'Verdana', sans-serif; /* Change font on hover */
+  }
+  
+  .updates {
+    display: flex;
+    flex-direction: column; /* Arrange cards vertically */
+    gap: 20px; /* Spacing between cards */
+  }
+  
+  .update-card {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease; /* Add transition for hover effect */
+  }
+  
+  .update-card:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+  }
+  
+  .update-date {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333; /* Date color */
+  }
+  
+  .update-description {
+    color: #555; /* Description color */
+  }
+  
+  /* Media query for responsiveness */
+  @media screen and (max-width: 768px) {
+    .update-card {
+      padding: 15px; /* Adjust padding for smaller screens */
+    }
+  }
+  
