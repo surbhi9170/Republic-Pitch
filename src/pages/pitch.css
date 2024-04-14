@@ -1,5 +1,3 @@
-/* styles.css */
-
 /* Global styles */
 body {
     font-family: 'Source Sans Pro', sans-serif; /* Using Source Sans Pro font */
@@ -15,7 +13,6 @@ body {
     transition: transform 0.3s ease; /* Add transition for hover effect */
   }
   
-  
   .bonus-perks {
     display: flex;
     flex-wrap: wrap;
@@ -26,7 +23,9 @@ body {
     background-color: #f5f5f5;
     padding: 20px;
     border-radius: 10px;
-    width: 300px;
+    width: 100%; /* Full width on small screens */
+    max-width: 300px; /* Limit width on larger screens */
+    margin-bottom: 20px; /* Add margin between items */
   }
   
   .perk-item h3 {
@@ -50,12 +49,9 @@ body {
   .perk-item:hover {
     color: #007bff; /* Change text color on hover */
   }
-  /* styles.css */
-
-/* styles.css */
-
-/* Style for the info button */
-.info-button {
+  
+  /* Style for the info button */
+  .info-button {
     margin-left: 10px;
     background-color: transparent;
     border: none;
@@ -78,14 +74,13 @@ body {
   .deal-term:hover .info-text {
     display: block; /* Show info text on hover */
   }
-
   
   .highlight-text {
     font-size: 18px;
     line-height: 1.6;
     color: #333; /* Dark text color */
   }
-
+  
   .product-line {
     border-bottom: 2px solid #ccc; /* Add a line below Product */
     margin-bottom: 20px; /* Add space below the line */
@@ -95,7 +90,7 @@ body {
   .product-heading {
     font-size: 24px; /* Large heading size */
     margin-bottom: 20px; /* Add space below the heading */
-    color:#555;
+    color: #555;
   }
   
   .medium-text {
@@ -127,8 +122,7 @@ body {
     font-size: 18px; /* Medium text size */
     margin-top: 20px; /* Add space above the quote */
   }
-
-
+  
   .accolades-awards {
     margin-top: 30px; /* Add space above the accolades section */
   }
@@ -149,7 +143,7 @@ body {
     margin-top: 20px; /* Add space above the quote */
   }
   
-  .mag{
+  .mag {
     display: flex;
     text-align: center;
     width: 200px;
@@ -157,13 +151,20 @@ body {
     animation: data 5s linear;
     animation-iteration-count: infinite;
   }
-  @keyframes data {
-    0%{transform: rotate(0deg);}
-    50%{transform: rotate(10deg);}
-    100%{transform: rotate(-10deg);}
-}
   
-.centered-image {
+  @keyframes data {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    100% {
+      transform: rotate(-10deg);
+    }
+  }
+  
+  .centered-image {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -173,11 +174,35 @@ body {
   #visionimage {
     max-width: 70%; /* Ensure the image doesn't exceed its container */
   }
-
-  .vision-container{
+  
+  .vision-container {
     text-align: center;
   }
-
-  .aboutp{
+  
+  .aboutp {
     background: white;
   }
+  
+  /* Media Queries for responsiveness */
+  
+  @media screen and (min-width: 768px) {
+    /* Adjust styles for medium-sized screens */
+    .perk-item {
+      width: 88%; /* Two items per row */
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    /* Adjust styles for large screens */
+    .perk-item {
+      width: 90%; /* Three items per row */
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    /* Adjust styles for extra-large screens */
+    .perk-item {
+      width: 73%; /* Four items per row */
+    }
+  }
+  

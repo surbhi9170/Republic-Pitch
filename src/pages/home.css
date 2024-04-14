@@ -1,0 +1,159 @@
+/* Global styles */
+body {
+    font-family: 'Source Sans Pro', sans-serif; /* Using Source Sans Pro font */
+    line-height: 1.6; /* Increase line height for better readability */
+  }
+  
+  /* Container styles */
+  .funding-status {
+    margin-top: 2rem; /* Add top margin */
+    margin-left: 2rem; /* Add left margin */
+  }
+  
+  /* Green status text */
+  .green {
+    color: #fcfcfc; /* Green color for fully funded status */
+    font-size: 1rem; /* Adjust font size */
+  }
+  
+  /* Title styles */
+  h1,
+  h2,
+  h4 {
+    margin-top: 1rem; /* Add top margin to titles */
+  }
+  
+  /* Button styles */
+  .invest_b {
+    margin-top: 1rem; /* Add top margin */
+    font-size: 1rem; /* Adjust font size */
+    display: block; /* Ensure the button is displayed as a block element */
+    width: 100%; /* Make the button take full width */
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    /* Adjust margins for smaller screens */
+    .funding-status {
+      margin-top: 1rem;
+      margin-left: 1rem;
+    }
+  
+    /* Adjust font sizes for smaller screens */
+    .green {
+      font-size: 0.8rem;
+    }
+  
+    h1,
+    h2,
+    h4 {
+      font-size: 0.5rem;
+    }
+    b {
+        font-size: 0.9rem; /* Adjusted font size for headings */
+      }
+      .successfund{
+        font-size: 1rem;
+      }
+  
+    .invest_b {
+      font-size: 0.8rem;
+    }
+}
+@media (max-width: 575.98px) {
+    .col-sm-12 .mt-4 {
+        margin-top: -0.5rem!important;
+    }
+    .funding-status {
+      margin-top: 0.5rem; /* Adjusted top margin for extra-small screens */
+      margin-left: 0.5rem; /* Adjusted left margin for extra-small screens */
+    }
+  
+    .green {
+      font-size: 0.7rem; /* Adjusted font size for green status text */
+    }
+  
+    h1, h2, h4 {
+      font-size: 0.5rem; /* Adjusted font size for headings */
+    }
+
+    b {
+        font-size: 1rem; /* Adjusted font size for headings */
+      }
+    
+    .successfund{
+        font-size: 1rem;
+      }
+
+    .invest_b {
+      font-size: 0.7rem; /* Adjusted font size for investment button */
+    }
+
+    .mt-4 {
+        margin-top: -0.5rem!important;
+    }
+  }
+  
+  /* Media query for small screens */
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .col-sm-12 .mt-4 {
+        margin-top: -0.5rem!important;
+    }
+    .funding-status {
+      margin-top: -0.8rem; /* Adjusted top margin for small screens */
+      margin-left: -0.8rem; /* Adjusted left margin for small screens */
+    }
+  
+    .green {
+      font-size: 0.8rem; /* Adjusted font size for green status text */
+    }
+  
+    h1, h2, h4 {
+      font-size: 0.8rem; /* Adjusted font size for headings */
+    }
+  
+    .invest_b {
+      font-size: 0.8rem; /* Adjusted font size for investment button */
+    }
+    
+  }
+  
+  /* Media query for medium screens */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .funding-status {
+      margin-top: 1rem; /* Default top margin for medium screens */
+      margin-left: 1rem; /* Default left margin for medium screens */
+    }
+  
+    .green {
+      font-size: 1rem; /* Default font size for green status text */
+    }
+  
+    h1, h2, h4 {
+      font-size: 1rem; /* Default font size for headings */
+    }
+  
+    .invest_b {
+      font-size: 1rem; /* Default font size for investment button */
+    }
+
+    .mt-4 {
+        margin-top: 1rem!important;
+    }
+  }
+  
+  /* Media query for large screens */
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    /* Styles for large screens */
+    .mt-4 {
+        margin-top: 1rem!important;
+    }
+  }
+  
+  /* Media query for extra-large screens */
+  @media (min-width: 1200px) {
+    /* Styles for extra-large screens */
+    .mt-4 {
+        margin-top: 1rem!important;
+    }
+  }

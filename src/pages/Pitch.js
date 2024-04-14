@@ -9,7 +9,7 @@ function Pitch() {
     <Container className="py-4">
       <h1 className="text-center mb-4">Highlights</h1>
       <Row className="mb-4">
-        <Col md={6}>
+        <Col md={6} className="mb-4 mb-md-0">
           <Card className="bg-light">
             <Card.Body>
               <Card.Title>Huge Market</Card.Title>
@@ -19,7 +19,7 @@ function Pitch() {
             </Card.Body>
           </Card>
         </Col>
-        <Col md={6}>
+        <Col md={6} className="mb-4 mb-md-0">
           <Card className="bg-light">
             <Card.Body>
               <Card.Title>Strong Year One Performance</Card.Title>
@@ -31,7 +31,7 @@ function Pitch() {
         </Col>
       </Row>
       <Row className="mb-4">
-        <Col md={6}>
+        <Col md={6} className="mb-4 mb-md-0">
           <Card className="bg-light">
             <Card.Body>
               <Card.Title>Bode Miller's "Q Rating"</Card.Title>
@@ -39,7 +39,7 @@ function Pitch() {
             </Card.Body>
           </Card>
         </Col>
-        <Col md={6}>
+        <Col md={6} className="mb-4 mb-md-0">
           <Card className="bg-light">
             <Card.Body>
               <Card.Title>Featured In</Card.Title>

@@ -1,10 +1,9 @@
 import React from 'react'
 import AwesomeSlider from 'react-awesome-slider'
 import withAutoplay from 'react-awesome-slider/dist/autoplay'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
-import { Tab, TabContainer, Nav } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
-
+import { Tab, TabContainer, Nav } from 'react-bootstrap'
+import { NavLink } from 'react-router-dom'
+import './home.css'
 import Pitch from './Pitch'
 import Updates from './Updates'
 import Reviews from './Reviews'
@@ -16,13 +15,13 @@ function Home() {
 
   return (
     <>
-      <div class="container-fluid">
-        {/* this is the first part */}
-        <div id="companyprofile" class="container-fluid ">
-          <div class="container">
-            <div class="row">
-              <div class="col-8">
-                <img></img>
+      <div className="container-fluid">
+        {/* First Part: Company Profile */}
+        <div id="companyprofile" className="container-fluid">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-8 col-md-12">
+                <img src="your-logo.png" alt="Company Logo" />
                 <h1>Peak Ski Company</h1>
                 <h6>
                   Revolutionary skis with proprietary technology by Olympian
@@ -31,7 +30,7 @@ function Home() {
 
                 <AutoplaySlider
                   play={true}
-                  cancelOnInteraction={false} // should stop playing on user interaction
+                  cancelOnInteraction={false}
                   interval={5000}
                 >
                   <div class="ratio vid">
@@ -60,8 +59,8 @@ function Home() {
                   </div>
                 </AutoplaySlider>
               </div>
-              <div class="col-4 p-4 ">
-                <div className=" mt-4 ml-4">
+              <div className="col-lg-4 col-md-12 col-sm-12 p-4">
+                <div className="mt-4 ml-4 funding-status ">
                   <div className="green">FULLY FUNDED</div>
 
                   <h1 className="mt-4">
@@ -73,62 +72,64 @@ function Home() {
                     <b>560</b>
                   </h2>
                   <span>Investors</span>
+                </div>
+                <div className="mt-4 ml-4">
+                  <hr></hr>
 
-                  <hr className="mt-4 mb-4"></hr>
-
-                  <h4 className="mt-4 text-secondary">
+                  <h4 className="successfund mt-4 text-secondary">
                     Successfully funded and closed on February 27, 2024.
                   </h4>
 
-                  <button type="button" class="invest_b btn btn-primary ">
-                    Invest in Peak sky company
+                  <button
+                    type="button"
+                    className="invest_b btn btn-primary mt-4"
+                  >
+                    Invest in Peak Ski Company
                   </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        {/* this the end of 1 part */}
 
-        {/* start of 2nd part */}
+        {/* Second Part: Tabbed Content */}
         <div id="pitch" className="container-fluid bg-light">
-      <TabContainer id="tabs-container" defaultActiveKey="pitch">
-        <Nav className="nav nav-tabs">
-          <Nav.Item>
-            <Nav.Link eventKey="pitch" className="nav-link " aria-current="page">
-              Pitch
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link eventKey="updates" className="nav-link" >
-              Updates
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link eventKey="reviews" className="nav-link" >
-              Reviews
-            </Nav.Link>
-          </Nav.Item>
-        </Nav>
+          <TabContainer id="tabs-container" defaultActiveKey="pitch">
+            <Nav className="nav nav-tabs">
+              <Nav.Item>
+                <Nav.Link
+                  eventKey="pitch"
+                  className="nav-link"
+                  aria-current="page"
+                >
+                  Pitch
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="updates" className="nav-link">
+                  Updates
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="reviews" className="nav-link">
+                  Reviews
+                </Nav.Link>
+              </Nav.Item>
+            </Nav>
 
-        <Tab.Content>
-          <Tab.Pane eventKey="pitch">
-            <Pitch/>
-            {/* Add Pitch data display here */}
-          </Tab.Pane>
-          <Tab.Pane eventKey="updates">
-            <Updates/>
-            {/* Add Updates data display here */}
-          </Tab.Pane>
-          <Tab.Pane eventKey="reviews">
-            <Reviews/>
-            {/* Add Reviews data display here */}
-          </Tab.Pane>
-        </Tab.Content>
-      </TabContainer>
-      
-    </div>
-    
+            <Tab.Content>
+              <Tab.Pane eventKey="pitch">
+                <Pitch />
+              </Tab.Pane>
+              <Tab.Pane eventKey="updates">
+                <Updates />
+              </Tab.Pane>
+              <Tab.Pane eventKey="reviews">
+                <Reviews />
+              </Tab.Pane>
+            </Tab.Content>
+          </TabContainer>
+        </div>
       </div>
     </>
   )

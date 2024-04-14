@@ -3,19 +3,22 @@
     height: fit-content;
     background: #143154;
     color: white;
-    text-align: left;
+    text-align: center; /* Center align text */
     padding: 20px;
     font-size: 14px;
   }
   
   .footer-content {
     display: flex;
-    justify-content: space-between;
-     /* Align items vertically */
+    flex-wrap: wrap; /* Allow items to wrap to next line */
+    justify-content: space-around;
+    gap: 20px; /* Add gap between sections */
   }
   
   .footer-section {
+    flex: 1 1 200px; /* Each section takes up equal width, can adjust as needed */
     margin-right: 30px;
+    margin-bottom: 20px; /* Add bottom margin between sections */
   }
   
   .footer-section.logo-section p {
@@ -43,12 +46,27 @@
   
   .social-icons {
     display: flex;
-    gap: 10px;
     justify-content: center; /* Align icons to the center horizontally */
+    gap: 10px;
   }
   
   .social-icons svg {
     color: white;
     font-size: 32px; /* Increase icon size */
+  }
+  
+  /* Media Queries for responsiveness */
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column; /* Stack sections vertically on smaller screens */
+      align-items: center; /* Center align items horizontally */
+    }
+  
+    .footer-section {
+      flex: 1 1 100%; /* Each section takes full width on smaller screens */
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
   }
   
