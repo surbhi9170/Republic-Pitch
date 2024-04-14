@@ -1,5 +1,6 @@
 import React from 'react';
-import './team.css'; // Import the CSS file
+import './team.css';
+
 
 const Team = () => {
   return (

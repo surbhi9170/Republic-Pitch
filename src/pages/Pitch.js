@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Row, Col, Button, Card } from 'react-bootstrap'
 import './pitch.css'
-import About from "./About"
+import About from './About'
 import Team from './Team'
 
 function Pitch() {
@@ -617,7 +617,7 @@ function Pitch() {
                   executing on several other globally impactful strategic
                   initiatives.
                 </p>
-                <div className='vision-container'>
+                <div className="vision-container">
                   <img
                     src="./images/vision.png"
                     alt="Opportunity Image"
@@ -629,17 +629,15 @@ function Pitch() {
             </div>
 
             <div className="row aboutp">
-                <About/>
+              <About />
             </div>
 
             <div className="row ">
-                <Team/>
+              <Team />
             </div>
           </div>
         </div>
       </div>
-
-      {/* Add other sections like Traction, Vision and Strategy, Leadership, Perks, Deal Terms */}
     </Container>
   )
 }

@@ -135,7 +135,7 @@ function Footer() {
       </div>
 
       <div className="footer-disclaimer">
-        {/* Add your disclaimer content here */}
+        
       </div>
     </footer>
   )
