@@ -30,6 +30,10 @@ body {
     display: block; /* Ensure the button is displayed as a block element */
     width: 100%; /* Make the button take full width */
   }
+
+  .home{
+    margin-top: 14%;
+  }
   
   /* Media queries for responsiveness */
   @media (max-width: 768px) {

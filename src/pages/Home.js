@@ -18,7 +18,7 @@ function Home() {
       <div className="container-fluid">
         {/* First Part: Company Profile */}
         <div id="companyprofile" className="container-fluid">
-          <div className="container">
+          <div className="home container">
             <div className="row">
               <div className="col-lg-8 col-md-12">
                 <img src="your-logo.png" alt="Company Logo" />
