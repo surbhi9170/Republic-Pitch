@@ -5,11 +5,14 @@
   
   .about-content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
   }
   
   .about-section {
-    margin-right: 30px;
+    margin-bottom: 20px; /* Added space between sections */
+    flex: 0 0 calc(33.3% - 20px); /* Adjusted width for responsive layout */
+    max-width: calc(33.3% - 20px); /* Added max-width for responsiveness */
   }
   
   .about-section ul {
@@ -26,12 +29,28 @@
   }
   
   .social-icons {
-    display: flex;
+    display: block;
   }
   
   .social-icon {
     margin-right: 10px;
   }
-  p{
+
+  .social-icon svg {
+    color: black;
+  }
+  
+  .social-icon svg:hover {
+    color: #0d6efd;
+  }
+  p {
     color: #80878e;
   }
+  
+  @media (max-width: 768px) {
+    .about-section {
+      flex: 0 0 calc(50% - 20px); /* Adjusted width for smaller screens */
+      max-width: calc(50% - 20px); /* Added max-width for smaller screens */
+    }
+  }
+  

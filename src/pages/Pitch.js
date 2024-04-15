@@ -53,7 +53,7 @@ function Pitch() {
 
       <div class="container">
         <div class="row">
-          <div class="col-8">
+          <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
             <h1 className="text-left my-4">Opportunity</h1>
             <Row className="mb-4">
               <Col md={8}>
@@ -178,7 +178,7 @@ function Pitch() {
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <div class="deal-terms">
               <h2 class="deal-heading">Deal Terms</h2>
               <div class="deal-term">
@@ -383,7 +383,7 @@ function Pitch() {
             PEAK'S PROPRIETARY TECHNOLOGY
           </h2>
 
-          <div className="col-6">
+          <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <div className="mt-4 technology-details">
               <h3 class="technology-subheading">KeyHole Technology™</h3>
               <p>
@@ -435,7 +435,7 @@ function Pitch() {
             ></iframe>
           </div>
 
-          <div className="col-6">
+          <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <div className="mt-4 technology-details">
               <h3 class="technology-subheading">Revolutionary PEAK Loc8™</h3>
               <p>
@@ -527,7 +527,7 @@ function Pitch() {
             <div className="product-line"></div>
             <h1 className="text-center my-4">Year One's Successes</h1>
             <div className="row">
-              <div className="col-8">
+              <div className="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
                 <div className="product-details">
                   <p className="medium-text">
                     After its inaugural year, Peak has solidified its position
@@ -585,7 +585,7 @@ function Pitch() {
                   </ul>
                 </div>
               </div>
-              <div className="col-4">
+              <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div className="mag">
                   <img
                     src="./images/mag.png"
