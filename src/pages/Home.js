@@ -9,6 +9,7 @@ import Updates from './Updates'
 import Reviews from './Reviews'
 
 import 'react-awesome-slider/dist/styles.css'
+import Cities from './Cities'
 
 function Home() {
   const AutoplaySlider = withAutoplay(AwesomeSlider)
@@ -115,6 +116,11 @@ function Home() {
                   Reviews
                 </Nav.Link>
               </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="cities" className="nav-link">
+                  Cities
+                </Nav.Link>
+              </Nav.Item>
             </Nav>
 
             <Tab.Content>
@@ -126,6 +132,9 @@ function Home() {
               </Tab.Pane>
               <Tab.Pane eventKey="reviews">
                 <Reviews />
+              </Tab.Pane>
+              <Tab.Pane eventKey="cities">
+                <Cities />
               </Tab.Pane>
             </Tab.Content>
           </TabContainer>
